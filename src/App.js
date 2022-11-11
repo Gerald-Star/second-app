@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import Promo from './Promo';
+import Dog from './Dog';
 import './App.css';
+import InputComponent from './InputComponent';
+import RegisterForm from './RegisterForm';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Promo />
+      <Dog />
+      <InputComponent />
+      <RegisterForm />
+      
+     
     </div>
   );
 }

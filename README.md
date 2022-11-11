@@ -1,5 +1,21 @@
 # Getting Started with Create React App
 
+Using the Single Source of Truth concept in props
+
+single source of truth allows you to edit multpile times at the same time 
+if they reference the same DataTransfer, reduces errors, and more efficient
+when data changes
+
+
+React Hooks
+Define a component and name is InputComponent
+This component renders three things;
+1. input text field
+2. text that has been entered inside the field
+3. A reset button to set the field back to its default state.
+
+As the user types in this field, the current text that was typed is also displayed.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
