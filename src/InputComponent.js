@@ -11,11 +11,16 @@ function Food(props){
 function InputComponent(){
 
     const [inputText, setText] = useState('hello');
-    const [word] = useState('Eat');
+    const [word, setWord] = useState('Eat');
 
-function handleChange(e){
+    function HandleClick (){
+        setWord('Drink')
+        setWord('Chop')
+    }
+
+    function handleChange(e){
     setText(e.target.value);
-}
+    }
 
     return(
         <div>
@@ -24,6 +29,7 @@ function handleChange(e){
             <button onClick={() => setText('hello')} >Reset</button>
 
             <Food message={word + " at Little Lemon"}/>
+            <button onClick={HandleClick}>Change</button>
 
         </div>
     );
